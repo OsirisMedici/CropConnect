@@ -1,13 +1,15 @@
-import HomePage from '../components/HomePage';
-import ProductPage from '../components/ProductPage'; 
+import React from 'react';
+import Homepage from '../components/Homepage';
+import Login from '../components/Login';
+import Signup from '../components/Signup';
 
 export default function Home() {
+
   return (
    <>
-    <div>
-      <HomePage/>
-      {/* <ProductPage/> */}
-    </div>
+    <Homepage/>
+    <Login/>
+    <Signup/>
    </>
   )
 }
