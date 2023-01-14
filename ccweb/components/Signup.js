@@ -6,15 +6,15 @@ import { BsPerson } from 'react-icons/bs';
 const Signup = () => {
     return (
         <div className="flex ">
-                <main className=" flex flex-col items-center justify-center w-full  h-screen flex-1 text-center">
-                    <div className="rounded-bl-3xl flex w-2/3 max-w-4xl ">
-                    <div className=" w-2/5 bg-gradient-to-tr from-[#953508] via-[#ca6512] to-[#f3ba2b] text-white shadow-md shadow-gray-400 py-36 px-12 ">
+                <main className=" md:flex flex-col items-center justify-center w-full  md:h-screen flex-1 text-center">
+                    <div className="rounded-bl-3xl md:flex md:w-2/3 max-w-4xl ">
+                    <div className=" md:w-2/5 bg-gradient-to-tr from-[#953508] via-[#ca6512] to-[#f3ba2b] text-white shadow-md shadow-gray-400 py-36 px-12 ">
                             <div className="text-center text-3xl animate-shake"><MdWavingHand /></div>
                             <h1 className="text-3xl font-bold " >Welcome back !</h1>
                             <div className="border-2 w-60 border-white inline-block mb-2 "></div>
-                            <p >Make your account in seconds & boost your growth from today.</p>
+                            <p >Make your account in seconds & get your work done in minutes.</p>
                         </div>
-                        <div className=" w-3/5 p-5 shadow-gray-200 shadow-md bg-white">
+                        <div className=" md:w-3/5 p-5 shadow-gray-200 shadow-md bg-white">
                             <div className="text-left font-bold">
                                 <span className="font-normal">Crop</span>Connect
                             </div>

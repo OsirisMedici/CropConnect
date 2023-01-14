@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
+import { BsPerson } from 'react-icons/bs';
 
 const Navbar = () => {
 
@@ -44,15 +45,20 @@ const Navbar = () => {
           <h1 style={{ color: `${textColor}` }} className="text-2xl">|OiO|</h1>
         </Link>
         <ul style={{ color: `${textColor}` }} className="hidden sm:flex uppercase font-sans text-sm ease-in-out duration-500">
-          <li className="px-4 hover:font-semibold duration-200 peer-checked">
+          <li className="px-4 hover:font-semibold duration-200 ">
             <Link href='/homepage'>Home</Link>
           </li>
           <li className="px-4 hover:font-semibold duration-200">
             <Link href='/productpage'>Products</Link>
           </li>
-          <li className="px-4 hover:font-semibold duration-200 peer-checked:ring-green-500">
+          <li className="px-4 hover:font-semibold duration-200 ">
             <Link href='/contactpage'>Contact us</Link>
           </li>
+          <Link href="/#signup">
+          <li className="text-xl px-4 hover:scale-110 duration-200 cursor-pointer">
+            <BsPerson/>
+          </li>
+          </Link>
         </ul>
         <div className="sm:hidden block z-10 ">
           {!navigation && (
