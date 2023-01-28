@@ -49,7 +49,7 @@ const Navbar = () => {
             <Link href='/homepage'>Home</Link>
           </li>
           <li className="px-4 hover:font-semibold duration-200">
-            <Link href='/productpage'>Products</Link>
+            <Link href='/ProductPage'>Products</Link>
           </li>
           <li className="px-4 hover:font-semibold duration-200 ">
             <Link href='/contactpage'>Contact us</Link>

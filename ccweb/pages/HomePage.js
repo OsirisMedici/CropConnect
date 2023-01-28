@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Background from '../public/assests/image.jpg';
 
-const Home = () => {
+const HomePage = () => {
   return (
     <div className="flex items-center justify-center h-screen mb-[20rem]">
     <Image className="h-full w-full object-cover" alt="farming" src={Background}/>
@@ -17,4 +17,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default HomePage
