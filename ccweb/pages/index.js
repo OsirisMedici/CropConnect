@@ -1,7 +1,7 @@
 import React from 'react';
 import HomePage from './HomePage';
 import Login from '../components/Login';
-import Signup from '../components/Signup';
+import Signup from './Signup';
 
 export default function Home() {
 

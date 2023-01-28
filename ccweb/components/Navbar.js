@@ -46,7 +46,7 @@ const Navbar = () => {
         </Link>
         <ul style={{ color: `${textColor}` }} className="hidden sm:flex uppercase font-sans text-sm ease-in-out duration-500">
           <li className="px-4 hover:font-semibold duration-200 ">
-            <Link href='/homepage'>Home</Link>
+            <Link href='/HomePage'>Home</Link>
           </li>
           <li className="px-4 hover:font-semibold duration-200">
             <Link href='/ProductPage'>Products</Link>
@@ -54,7 +54,7 @@ const Navbar = () => {
           <li className="px-4 hover:font-semibold duration-200 ">
             <Link href='/contactpage'>Contact us</Link>
           </li>
-          <Link href="/#signup">
+          <Link href="/Signup">
           <li className="text-xl px-4 hover:scale-110 duration-200 cursor-pointer">
             <BsPerson/>
           </li>
