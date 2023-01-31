@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { FaDiscord, FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 const footer = () => {
   return (
@@ -25,12 +25,11 @@ const footer = () => {
                       <h3 className="font-bold font-sans text-lg text-transparent bg-clip-text bg-gradient-to-tr from-[#712806] via-[#e97b21] to-[#f0c24c] ">CropConnect</h3>
                 <p className="text-gray-600">A small brief introduction about the website or about the working of the website. </p>
             </div>
-            <div className="px-12">
+            <div className="px-16 p-5">
                 <ul className="text-gray-600 ">
                     <li className="hover:bg-gray-200 rounded-md h-6 w-36 px-2"><a href="/">Home</a></li>
                     <li className="hover:bg-gray-200 rounded-md h-6 w-36 px-2"><a href="/">Services</a></li>
                     <li className="hover:bg-gray-200 rounded-md h-6 w-36 px-2"><a href="/">Privacy Policy</a></li>
-                    <li className="hover:bg-gray-200 rounded-md h-6 w-36 px-2"><a href="/">Terms & Condition</a></li>
                 </ul>
             </div>
             <div className="p-4">
@@ -63,8 +62,11 @@ const footer = () => {
           <hr/>
           </div>
           <div className="text-center">
-            <p className="text-slate-400 mt-10 font-sans">
-              CropConnect [All Rights Reserved] @{new Date().getFullYear()}
+            <p className="text-slate-400 mt-9 font-sans">
+              Copyright : CropConnect @{new Date().getFullYear()}
+            </p>
+            <p className="text-slate-400 font-sans">
+              All Rights Reserved
             </p>
           </div>
         </div>

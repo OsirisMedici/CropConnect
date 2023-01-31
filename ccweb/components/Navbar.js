@@ -50,17 +50,19 @@ const Navbar = () => {
         </Link>
         <ul style={{ color: `${textColor}` }} className="hidden sm:flex uppercase font-sans text-sm ease-in-out duration-500">
           <li className="px-4 hover:font-semibold duration-200 ">
-            <Link href='/'><div>Home</div></Link>
+            <Link href='/'>Home</Link>
           </li>
           <li className="px-4 hover:font-semibold duration-200">
-            <Link href='/productpage'><div>Products</div></Link>
+            <Link href='/productpage'>Products</Link>
           </li>
           <li className="px-4 hover:font-semibold duration-200 ">
             <Link href='/contactpage'><div>Contact us</div></Link>
           </li>
-          <li className="text-xl px-4 hover:scale-105 duration-200">
-            <Link href='/signup'><BsPerson/></Link>
+          <Link href="/signup">
+          <li className="text-xl px-4 hover:scale-110 duration-200 cursor-pointer">
+            <BsPerson/>
           </li>
+          </Link>
         </ul>
         <div className="sm:hidden block z-10 ">
           {!navigation && (

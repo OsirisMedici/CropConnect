@@ -48,7 +48,7 @@ const Login = () => {
                                     </label>
                                     <a href="#" className="text-sm hover:font-underline">Forgot Password?</a>
                                 </div>
-                                <a href="/" className=" rounded-full py-2 px-12 inline-block font-semibold border-2 border-[#b45419] text-[#b45419] hover:text-[white] hover:bg-gradient-to-tr from-[#953508] via-[#ca6512] to-[#f3ba2b] hover:tracking-wider duration-300 hover:border-none">Log In</a>
+                                <a href="/" className=" rounded-full py-2 px-12 inline-block font-semibold border-2 border-[#b45419] text-[#b45419] hover:text-[white] hover:bg-gradient-to-tr from-[#953508] via-[#ca6512] to-[#f3ba2b] hover:tracking-wider duration-100 hover:border-white">Log In</a>
                         </div>
                     </div>
                     <div className=" md:w-2/5 bg-gradient-to-tr from-[#953508] via-[#ca6512] to-[#f3ba2b] text-white shadow-md shadow-gray-400 py-36 px-12 ">
@@ -57,7 +57,7 @@ const Login = () => {
                         <div className="border-2 w-60 border-white inline-block mb-2 "></div>
                         <p> Don&apos;t have an account yet?</p>
                         <p className="mb-8 text-gray-100"> Sign up now & start exploring.</p>
-                        <a href="/signup" className=" border-2 border-white rounded-full py-2 px-12 inline-block font-semibold hover:bg-white hover:text-[#b45419] hover:tracking-wider duration-500 hover:border-none">Sign Up</a>
+                        <a href="/signup" className=" border-2 border-white rounded-full py-2 px-12 inline-block font-semibold hover:bg-white hover:text-[#b45419] hover:tracking-wider duration-100 hover:border-none">Sign Up</a>
                     </div>
                 </div>
             </main>
