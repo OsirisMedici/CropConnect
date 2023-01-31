@@ -15,12 +15,12 @@ const Signup = () => {
                             <p >Make your account in seconds & get your work done in minutes.</p>
                         </div>
                         <div className=" md:w-3/5 p-5 shadow-gray-200 shadow-md bg-white">
-                            <div className="text-left font-bold">
+                            <div className="md:text-left font-bold">
                                 <span className="font-normal">Crop</span>Connect
                             </div>
                             <div className="py-4 ">
                             <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-[#bf5f23] mb-2 ">Create Account</h2>
-                                <div className="border-2 w-96 border-black inline-block mb-2"></div>
+                                <div className="border-2 md:w-96 w-40 border-black inline-block mb-2"></div>
                                 <p className="text-gray-400 mb-5"> Enter your personal details.</p>
                                 <div className="flex flex-col items-center">
                                     <div className="bg-gray-100 w-80 p-2 flex items-center mb-2">
@@ -46,7 +46,7 @@ const Signup = () => {
                                         <input type="password" placeholder="Confirm Password" className="bg-gray-100 outline-none flex-1"/>
                                     </div>
                                 </div>
-                            <a href="#" className=" rounded-full py-2 px-12 inline-block font-semibold border-2 border-[#b45419] text-[#b45419] hover:text-[white] hover:bg-gradient-to-tr from-[#953508] via-[#ca6512] to-[#f3ba2b] hover:tracking-wider duration-300">Sign Up</a>
+                            <a href="/login" className=" rounded-full py-2 px-12 inline-block font-semibold border-2 border-[#b45419] text-[#b45419] hover:text-[white] hover:bg-gradient-to-tr from-[#953508] via-[#ca6512] to-[#f3ba2b] hover:tracking-wider duration-300 hover:border-none">Sign Up</a>
                             </div>
                         </div>
                     </div>

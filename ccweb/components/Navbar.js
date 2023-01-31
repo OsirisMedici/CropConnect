@@ -11,7 +11,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const changeColor= () =>{
-      if(window.scrollY >=180) {
+      if(window.scrollY >=100) {
         setColor('#ffffff')
         setTextColor('#642b08')
       }
@@ -25,17 +25,21 @@ const Navbar = () => {
 
   const menuItem = [
     {
-      id: 1,
+      id: '/',
       name: "Home"
     },
     {
-      id: 2,
+      id: '/productpage',
       name: "Products"
     },
     {
-      id: 3,
+      id: '/contactpage',
       name: "Contact Us"
     },
+    {
+      id: '/signup',
+      icon: <BsPerson/>
+    }
   ]
 
   return (
@@ -46,19 +50,17 @@ const Navbar = () => {
         </Link>
         <ul style={{ color: `${textColor}` }} className="hidden sm:flex uppercase font-sans text-sm ease-in-out duration-500">
           <li className="px-4 hover:font-semibold duration-200 ">
-            <Link href='/homepage'>Home</Link>
+            <Link href='/'><div>Home</div></Link>
           </li>
           <li className="px-4 hover:font-semibold duration-200">
-            <Link href='/productpage'>Products</Link>
+            <Link href='/productpage'><div>Products</div></Link>
           </li>
           <li className="px-4 hover:font-semibold duration-200 ">
-            <Link href='/contactpage'>Contact us</Link>
+            <Link href='/contactpage'><div>Contact us</div></Link>
           </li>
-          <Link href="/#signup">
-          <li className="text-xl px-4 hover:scale-110 duration-200 cursor-pointer">
-            <BsPerson/>
+          <li className="text-xl px-4 hover:scale-105 duration-200">
+            <Link href='/signup'><BsPerson/></Link>
           </li>
-          </Link>
         </ul>
         <div className="sm:hidden block z-10 ">
           {!navigation && (
@@ -76,10 +78,11 @@ const Navbar = () => {
               <AiOutlineClose size={22} />
             </div>
             <div className="mt-8 flex flex-col h-fit uppercase gap-20 font-sans text-white">
-              <ul>
-                {menuItem.map(({ id, name, index }) => (
-                  <Link key={index} href={`/#${id}`}>
+              <ul onClick={() => setNavigation(false)}>
+                {menuItem.map(({ id, name, index, icon }) => (
+                  <Link key={index} href={`${id}`}>
                     <li className="py-4 text-xl">{name}</li>
+                    <li className="py-4 text-xl">{icon}</li>
                   </Link>
                 ))}
               </ul>
