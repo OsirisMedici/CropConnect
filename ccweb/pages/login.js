@@ -1,11 +1,14 @@
+import Image from 'next/image';
 import { MdWavingHand, MdLockOutline } from 'react-icons/md';
 import { FaFacebookF, FaGoogle, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 import { FiMail } from 'react-icons/fi';
+import Background1 from '../public/assests/image2.webp';
 
 const Login = () => {
     return (
-        <div className="flex">
-            <main className=" md:flex flex-col items-center justify-center w-full md:h-screen flex-1 text-center">
+        <div className="flex md:mb-[28rem] mb-[50rem]">
+            <Image className='md:h-96 md:w-full w-[80%] opacity-80 md:object-fill' src={Background1} />
+            <main className="absolute md:flex flex-col items-center justify-center w-full md:h-screen flex-1 text-center">
                 <div className="rounded-bl-3xl md:flex md:w-2/3 max-w-4xl">
                     <div className="md:w-3/5 p-5 shadow-gray-200 bg-white shadow-md">
                         <div className="md:text-left font-bold">

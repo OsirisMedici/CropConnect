@@ -1,12 +1,14 @@
-import React from 'react';
+import Image from 'next/image';
 import { MdWavingHand, MdLockOutline } from 'react-icons/md';
 import { FiMail } from 'react-icons/fi';
 import { BsPerson } from 'react-icons/bs';
+import Background1 from '../public/assests/image2.webp';
 
 const Signup = () => {
     return (
-        <div className="flex ">
-            <main className=" md:flex flex-col items-center justify-center w-full  md:h-screen flex-1 text-center">
+        <div className="flex mb-[28rem]">
+        <Image className="h-96 w-full opacity-80 object-fill" src={Background1}/>
+            <main className="absolute md:flex flex-col items-center justify-center w-full  md:h-screen flex-1 text-center">
                 <div className="rounded-bl-3xl md:flex md:w-2/3 max-w-4xl ">
                     <div className=" md:w-2/5 bg-gradient-to-tr from-[#953508] via-[#ca6512] to-[#f3ba2b] text-white shadow-md shadow-gray-400 py-36 px-12 ">
                         <div className="text-center text-3xl animate-shake"><MdWavingHand /></div>
