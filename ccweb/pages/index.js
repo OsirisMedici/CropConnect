@@ -1,15 +1,10 @@
-import React from 'react';
-import HomePage from './HomePage';
-import Login from '../components/Login';
-import Signup from './Signup';
+import HomePage from './homepage';
 
 export default function Home() {
 
   return (
    <>
     <HomePage/>
-    <Login/>
-    <Signup/>
    </>
   )
 }
